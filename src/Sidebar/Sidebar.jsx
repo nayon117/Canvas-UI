@@ -107,7 +107,6 @@ const Sidebar = () => {
                       componentOpen ? "rotate-180" : "rotate-0"
                     }`}
                   />
-
                   <span className="text-sm leading-2 tracking-wide text-black">
                     Components
                   </span>
