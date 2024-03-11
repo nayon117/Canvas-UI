@@ -12,6 +12,7 @@ const componentsItems = [
   "Badge",
   "Button",
   "Card",
+  "Spinner"
 ];
 
 const Sidebar = () => {
