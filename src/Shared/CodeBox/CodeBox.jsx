@@ -68,7 +68,6 @@ const CodeBox = ({ children, stringCode, text }) => {
                         className="text-2xl text-white cursor-pointer"
                         onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
                       />
-                      
                     </button>
                   </div>
                 ) : (
@@ -81,7 +80,6 @@ const CodeBox = ({ children, stringCode, text }) => {
                         className="text-2xl text-white cursor-pointer ml-2"
                         onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
                       />
-                      
                     </button>
                   </div>
                 )}

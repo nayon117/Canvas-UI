@@ -8,6 +8,7 @@ import Button from "./rootComponents/Button/Button";
 import Card from "./rootComponents/Card/Card";
 import Badge from "./rootComponents/Badge/Badge";
 import Alert from "./rootComponents/Alert/Alert";
+import Spinner from "./rootComponents/Spinner/Spinner";
 
 const Route = createBrowserRouter([
   { path: "*", element: <Working /> },
@@ -27,6 +28,7 @@ const Route = createBrowserRouter([
       { path: "card", element: <Card /> },
       { path: "badge", element: <Badge /> },
       { path: "alert", element: <Alert /> },
+      { path: "spinner", element: <Spinner /> },
     ],
   },
 ]);
