@@ -60,7 +60,7 @@ const Sidebar = () => {
               <div className="flex justify-between items-center border px-4 py-2 rounded-md ">
                 <div className="flex items-center ">
                   <FaAngleDown
-                    className={`transition-all text-sm mr-3 duration-300 ease-in-out text-yellow-900  ${
+                    className={`transition-all text-sm mr-3 duration-300 ease-in-out text-[#0072ff]  ${
                       docOpen ? "rotate-180" : "rotate-0"
                     }`}
                   />
@@ -82,13 +82,13 @@ const Sidebar = () => {
               >
                 <div className="my-2 flex flex-col  overflow-hidden  text-lg space-y-3">
                   <Link
-                    className="px-2 text-gray-900 duration-300 text-sm leading-2 tracking-wide   hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-orange-500"
+                    className="px-2 text-gray-900 duration-300 text-sm leading-2 tracking-wide   hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
                     to={"/"}
                   >
                     Introduction
                   </Link>
                   <Link
-                    className="px-2  text-gray-900 duration-300  text-sm leading-2 tracking-wide  hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-orange-500"
+                    className="px-2  text-gray-900 duration-300  text-sm leading-2 tracking-wide  hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
                     to="/"
                   >
                     Quick Start
@@ -103,7 +103,7 @@ const Sidebar = () => {
               <div className="flex justify-between items-center border px-4 py-2 rounded-md overflow-hidden">
                 <div className="flex items-center ">
                   <FaAngleDown
-                    className={`transition-all text-sm duration-300 mr-3 ease-in-out text-yellow-900  ${
+                    className={`transition-all text-sm duration-300 mr-3 ease-in-out text-[#0072ff]  ${
                       componentOpen ? "rotate-180" : "rotate-0"
                     }`}
                   />
@@ -127,7 +127,7 @@ const Sidebar = () => {
                     <NavLink
                       onClick={handleLink}
                       key={i}
-                      className="px-2 text-gray-900 duration-300  hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-orange-500"
+                      className="px-2 text-gray-900 duration-300  hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
                       to={ItemName.toLocaleLowerCase()}
                     >
                       <p onClick={() => setIsActive(true)}>{ItemName}</p>
