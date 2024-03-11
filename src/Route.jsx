@@ -3,13 +3,13 @@ import ComponentsLayout from "./Layout/ComponentsLayout";
 import Root from "./Layout/Root";
 import Home from "./Pages/Home/Home";
 import NotFound from "./Pages/NotFound/NotFound";
+import Avatar from './rootComponents/Avatar/Avatar'
+import Button from './rootComponents/Button/Button'
+import Card from './rootComponents/Card/Card'
+import Badge from './rootComponents/Badge/Badge'
+import Alert from './rootComponents/Alert/Alert'
 
-import Alert from "./UIcomponents/Alert/Alert";
-import Avatar from "./UIcomponents/Avatar/Avatar";
-import Badge from "./UIcomponents/Badge/Badge";
-import Button from "./UIcomponents/Button/Button";
-
-import Card from "./UIcomponents/Card/Card";
+ 
 
 const Route = createBrowserRouter([
   { path: "*", element: <NotFound /> },
