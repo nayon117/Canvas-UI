@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+  z-index: 999;
+  opacity: 1;
+  background-color: #ffffff; 
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+
+  --gap: 2em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.048);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+}
+
+.logo-text {
+  background: linear-gradient(to right,#00c6ff , #785d5d 35%,  #0072ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+  -webkit-animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+.navbar {
+  scroll-behavior: smooth;
+  opacity: 1;
+  background-color: rgb(31, 41, 55);
+  background-attachment: fixed;
+}
+
+.active {
+  color: #293748;
+  border-left: 2px solid orange;
+}
+
+.components-sidebar,
+.layout {
+  height: calc(100vh - 60px);
+}
+
+.layout::-webkit-scrollbar {
+  width: 10px;
+}
+
+.layout::-webkit-scrollbar-thumb {
+  background-color: rgb(245, 127, 23);
+  border-radius: 100px;
+}
+
+.layout::-webkit-scrollbar-track {
+  background-color: rgb(245, 127, 23);
+}
+
+.components-sidebar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.components-sidebar::-webkit-scrollbar-thumb {
+  opacity: 0;
+  border-radius: 100px;
+  transition: opacity 0.8s ease;
+}
+
+.components-sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(245, 127, 23);
+  border-radius: 100px;
+  opacity: 1;
+}
+.btn {
+  @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+}
