@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 
-const NotFound = () => {
+const Working = () => {
   return (
     <>
       <Navbar />
@@ -26,4 +26,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default Working;
