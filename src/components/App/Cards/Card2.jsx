@@ -65,4 +65,5 @@ const Card2 = () => {
     </CodeBox>
   );
 };
+
 export default Card2;
