@@ -24,7 +24,7 @@ const Card2 = () => {
                   </p>
                 </li>
                 <li className="inline-flex gap-2 items-center justify-center group-hover:delay-400 transition-all opacity-0 group-hover:opacity-100 group-hover:transition-all group-hover:duration-500">
-                  <p className="text-base font-medium text-white">Canvas UI</p>
+                  <p className="text-base font-medium text-white">EliteX UI</p>
                 </li>
                 <button className="px-2 py-1 bg-[#F5EFDB]">Details</button>
               </ul>
@@ -54,7 +54,7 @@ const Card2 = () => {
                   </p>
                 </li>
                 <li className="inline-flex gap-2 items-center justify-center group-hover:delay-400 transition-all opacity-0 group-hover:opacity-100 group-hover:transition-all group-hover:duration-500">
-                  <p className="text-base font-medium text-white">Canvas UI</p>
+                  <p className="text-base font-medium text-white">EliteX UI</p>
                 </li>
                 <button className="px-2 py-1 bg-[#F5EFDB]">Details</button>
               </ul>
