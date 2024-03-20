@@ -53,8 +53,8 @@ const Card1 = () => {
           Superhost
         </div>
       </div>
-      <h3 className="font-black text-gray-800 md:text-3xl text-xl">
-        Welcome to Canvas UI
+      <h3 className="font-black text-gray-800 md:text-2xl text-xl">
+        Welcome to EliteX UI
       </h3>
       <p className="md:text-lg text-gray-700 text-base">
         The best kept secret of The Bahamas is the country’s sheer size
@@ -71,7 +71,7 @@ const Card1 = () => {
   </div>
 </div>`}
       >
-        <div className="flex flex-col justify-center py-12">
+        <div className="flex flex-col justify-center py-6">
           <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
             <div className="w-full md:w-1/3 bg-white grid place-items-center">
               <img
@@ -119,8 +119,8 @@ const Card1 = () => {
                   Superhost
                 </div>
               </div>
-              <h3 className="font-black text-gray-800 md:text-3xl text-xl">
-                Welcome to Canvas UI
+              <h3 className="font-black text-gray-800 md:text-2xl text-xl">
+                Welcome to EliteX UI
               </h3>
               <p className="md:text-lg text-gray-700 text-base">
                 The best kept secret of The Bahamas is the country’s sheer size

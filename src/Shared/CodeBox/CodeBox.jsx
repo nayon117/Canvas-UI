@@ -33,7 +33,7 @@ const CodeBox = ({ children, stringCode, text }) => {
     <>
       <div className={`w-full rounded-md h-fit  px-4 py-2 `}>
         <div className={`w-full rounded-md h-fit  px-4 py-1 my-10 `}>
-          <h2 className="text-black text-3xl font-semibold mb-10">{text}</h2>
+          <h2 className="text-black text-xl font-semibold mb-3">{text}</h2>
 
           <div className="flex gap-2 items-center sm:justify-between justify-end rounded-t-lg border border-gray-500 shadow-lg bg-gradient-to-br from-[#00c6ff] to-[#0072ff] py-5">
             <div className="hidden sm:flex items-center gap-x-5 text-black text-lg ml-2">
@@ -68,7 +68,6 @@ const CodeBox = ({ children, stringCode, text }) => {
                         className="text-2xl text-white cursor-pointer"
                         onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
                       />
-                      
                     </button>
                   </div>
                 ) : (
@@ -81,7 +80,6 @@ const CodeBox = ({ children, stringCode, text }) => {
                         className="text-2xl text-white cursor-pointer ml-2"
                         onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
                       />
-                      
                     </button>
                   </div>
                 )}
