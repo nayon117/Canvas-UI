@@ -51,12 +51,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="mx-auto fixed top-0 py-2 w-full border-b-2 navbar border-[#0072ff]  z-10">
+    <nav className="mx-auto fixed top-0  w-full  navbar z-10">
       <div className="flex items-center justify-between max-w-8xl mx-auto px-5  ">
         <Link to={"/"} className="flex items-center">
           <img className="w-14" src={logo} alt="EliteX UI" />
 
-          <h2 className=" text-4xl font-bold logo-text">EliteX UI</h2>
+          <h2 className=" text-xl font-bold text-text2">EliteX UI</h2>
         </Link>
         <div className="hidden lg:block">
           <NavList />
