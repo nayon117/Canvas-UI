@@ -4,6 +4,7 @@ import Badge3 from "../../components/App/Badges/Badge3";
 import Badge4 from "../../components/App/Badges/Badge4";
 import Badge5 from "../../components/App/Badges/Badge5";
 import Badge6 from "../../components/App/Badges/Badge6";
+import Badge7 from "../../components/App/Badges/Badge7";
 
  
 const Badge = () => {
@@ -15,6 +16,7 @@ const Badge = () => {
            <Badge4/>
            <Badge5/>
            <Badge6/>
+           <Badge7/>
         </div>
     )
 }
