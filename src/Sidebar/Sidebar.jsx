@@ -37,7 +37,7 @@ const Sidebar = () => {
   };
   return (
     <>
-      <div className="menu z-20">
+      <div className="menu z-20 ">
         <button
           onClick={handleToggle}
           className="mobile-menu-button p-4 focus:outline-none  text-orange-600 fixed top-16  xl:hidden right-1"
@@ -50,7 +50,7 @@ const Sidebar = () => {
         </button>
       </div>
       <div
-        className={` components-sidebar  backdrop-blur-xl bg-black/15 fixed top-[74px] z-[20] ${
+        className={` components-sidebar  backdrop-blur-xl bg-white fixed top-[50px] z-[20] ${
           isActive && "-translate-x-full"
         }  xl:translate-x-0 xl:w-[240px]  select-none px-2 block transition-all overflow-y-scroll text-black`}
       >
@@ -120,7 +120,7 @@ const Sidebar = () => {
                 className={`transition-all duration-300 pb-10 ease-in-out grid ml-3  ${
                   componentOpen
                     ? "grid-rows-[1fr] opacity-100"
-                    : " grid grid-rows-[0fr] opacity-0"
+                    : "grid grid-rows-[0fr] opacity-0"
                 } `}
               >
                 <div className="my-2 flex flex-col overflow-hidden text-sm space-y-3 ">
