@@ -5,6 +5,7 @@ import Alert4 from "../../components/App/Alerts/Alert4";
 import Alert5 from "../../components/App/Alerts/Alert5";
 import Alert6 from "../../components/App/Alerts/Alert6";
 import Alert7 from "../../components/App/Alerts/Alert7";
+import Alert8 from "../../components/App/Alerts/Alert8";
 
 const Alert = () => {
   return (
@@ -16,6 +17,7 @@ const Alert = () => {
       <Alert5/>
       <Alert6/>
       <Alert7/>
+      <Alert8/>
     </div>
   );
 };
