@@ -1,8 +1,9 @@
+import Pagination1 from "../../components/App/Paginations/Pagination1";
 
 const Pagination = () => {
     return(
         <div>
-             <p> Welcome to Pagination part </p>
+             <Pagination1/>
         </div>
     )
 }
