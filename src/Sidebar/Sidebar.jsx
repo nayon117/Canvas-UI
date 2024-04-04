@@ -12,6 +12,9 @@ const componentsItems = [
   "Badge",
   "Button",
   "Card",
+  "Footer",
+  "Navbar",
+  "Pagination",
   "Spinner"
 ];
 
