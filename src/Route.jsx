@@ -9,6 +9,9 @@ import Card from "./rootComponents/Card/Card";
 import Badge from "./rootComponents/Badge/Badge";
 import Alert from "./rootComponents/Alert/Alert";
 import Spinner from "./rootComponents/Spinner/Spinner";
+import Footer from "./rootComponents/Footer/Footer";
+import Navber from "./rootComponents/Navber/Navber";
+import Pagination from "./rootComponents/pagination/Pagination";
 
 const Route = createBrowserRouter([
   { path: "*", element: <Working /> },
@@ -29,6 +32,10 @@ const Route = createBrowserRouter([
       { path: "badge", element: <Badge /> },
       { path: "alert", element: <Alert /> },
       { path: "spinner", element: <Spinner /> },
+      { path:"pagination",element:<Pagination/> },
+      {path:"navbar", element:<Navber/>},
+      {path:"footer", element:<Footer/>}
+
     ],
   },
 ]);
