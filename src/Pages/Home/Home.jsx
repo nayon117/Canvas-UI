@@ -1,9 +1,12 @@
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
+
+
 const Home = () => {
   return (
     <>
+
       <div className="max-w-xxl mx-auto relative  ">
         <div
           aria-hidden="true"
