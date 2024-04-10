@@ -15,7 +15,8 @@ const componentsItems = [
   "Footer",
   "Navbar",
   "Pagination",
-  "Spinner"
+  "Spinner",
+  "Carousel"
 ];
 
 const Sidebar = () => {
