@@ -10,8 +10,9 @@ import Badge from "./rootComponents/Badge/Badge";
 import Alert from "./rootComponents/Alert/Alert";
 import Spinner from "./rootComponents/Spinner/Spinner";
 import Footer from "./rootComponents/Footer/Footer";
-import Navber from "./rootComponents/Navber/Navber";
 import Pagination from "./rootComponents/pagination/Pagination";
+import Nav from "./rootComponents/Nav.jsx/Nav";
+import Carousel from "./rootComponents/Carousel/Carousel";
 
 const Route = createBrowserRouter([
   { path: "*", element: <Working /> },
@@ -33,7 +34,8 @@ const Route = createBrowserRouter([
       { path: "alert", element: <Alert /> },
       { path: "spinner", element: <Spinner /> },
       { path:"pagination",element:<Pagination/> },
-      {path:"navbar", element:<Navber/>},
+      {path:"navbar", element:<Nav/>},
+      {path:"carousel", element:<Carousel/>},
       {path:"footer", element:<Footer/>}
 
     ],
