@@ -1,9 +1,12 @@
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
+
+
 const Home = () => {
   return (
     <>
+
       <div className="max-w-xxl mx-auto relative  ">
         <div
           aria-hidden="true"
@@ -23,12 +26,12 @@ const Home = () => {
             </p>
             <div className="flex items-center justify-center gap-x-3">
               <Link to={"/components/avatar"}>
-                <button  color="amber" className="btn" size="lg">
+                <button   className="btn " size="lg">
                   Explore Components
                 </button>
               </Link>
               <Link to={"/documention"}>
-                <Button className="capitalize" size="lg">
+                <Button className="btn1" size="lg">
                   Dive into Documentation
                 </Button>
               </Link>
