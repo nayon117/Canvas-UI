@@ -1,8 +1,11 @@
+import Modal1 from "../../components/App/Modal/Modal1";
+import Modal2 from "../../components/App/Modal/Modal2";
 
 const Modal = () => {
     return(
         <div>
-             <p> Welcome to Modal part </p>
+              <Modal1/>
+              <Modal2/>
         </div>
     )
 }
