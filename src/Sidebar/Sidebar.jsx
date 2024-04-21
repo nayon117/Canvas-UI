@@ -16,7 +16,9 @@ const componentsItems = [
   "Navbar",
   "Pagination",
   "Spinner",
-  "Carousel"
+  "Carousel",
+  "Modal",
+  "Table"
 ];
 
 const Sidebar = () => {
