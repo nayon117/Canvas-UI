@@ -1,8 +1,9 @@
+import Modal1 from "../../components/App/Modal/Modal1";
 
 const Modal = () => {
     return(
         <div>
-             <p> Welcome to Modal part </p>
+              <Modal1/>
         </div>
     )
 }
