@@ -13,6 +13,8 @@ import Footer from "./rootComponents/Footer/Footer";
 import Pagination from "./rootComponents/pagination/Pagination";
 import Nav from "./rootComponents/Nav.jsx/Nav";
 import Carousel from "./rootComponents/Carousel/Carousel";
+import Modal from "./rootComponents/Modal/Modal";
+import Table from "./rootComponents/Table/Table";
 
 const Route = createBrowserRouter([
   { path: "*", element: <Working /> },
@@ -36,7 +38,9 @@ const Route = createBrowserRouter([
       { path:"pagination",element:<Pagination/> },
       {path:"navbar", element:<Nav/>},
       {path:"carousel", element:<Carousel/>},
-      {path:"footer", element:<Footer/>}
+      {path:"footer", element:<Footer/>},
+      {path:"modal", element:<Modal/>},
+      {path:"table", element:<Table/>},
 
     ],
   },
