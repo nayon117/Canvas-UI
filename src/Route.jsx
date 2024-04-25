@@ -15,6 +15,9 @@ import Nav from "./rootComponents/Nav.jsx/Nav";
 import Carousel from "./rootComponents/Carousel/Carousel";
 import Modal from "./rootComponents/Modal/Modal";
 import Table from "./rootComponents/Table/Table";
+import Rating from "./rootComponents/Rating/Rating";
+import Form from "./rootComponents/Form/Form";
+import Hero from "./rootComponents/Hero/Hero";
 
 const Route = createBrowserRouter([
   { path: "*", element: <Working /> },
@@ -41,6 +44,10 @@ const Route = createBrowserRouter([
       {path:"footer", element:<Footer/>},
       {path:"modal", element:<Modal/>},
       {path:"table", element:<Table/>},
+      {path:"rating", element:<Rating/>},
+      {path:"form", element:<Form/>},
+      {path:"hero", element:<Hero/>},
+
 
     ],
   },
