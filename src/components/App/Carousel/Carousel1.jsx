@@ -22,7 +22,27 @@ const images=[
 
     return (
         <>
-            <CodeBox>
+            <CodeBox stringCode={`   <div className="relative">
+                    <div className="flex justify-center items-center">
+                        <img
+                            src={images[currentImage]}
+                            alt="Carousel Image"
+                            className="rounded-lg shadow-lg h-64 object-cover"
+                        />
+                        <button
+                            className="absolute top-1/2 left-4 text-white bg-black rounded-full p-2 shadow-lg hover:bg-gray-800"
+                            onClick={prevImage}
+                        >
+                            <MdArrowBackIosNew/>
+                        </button>
+                        <button
+                            className="absolute top-1/2 right-4 text-white bg-black rounded-full p-2 shadow-lg hover:bg-gray-800"
+                            onClick={nextImage}
+                        >
+                           <MdArrowForwardIos/>
+                        </button>
+                    </div>
+                </div>`}>
                 <div className="relative">
                     <div className="flex justify-center items-center">
                         <img

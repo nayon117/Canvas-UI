@@ -1,8 +1,9 @@
+import Hero1 from "../../components/App/Hero/Hero1";
 
 const Hero = () => {
-    return(
+    return (
         <div>
-             <p> Welcome to Hero part </p>
+            <Hero1 />
         </div>
     )
 }
