@@ -12,12 +12,15 @@ const componentsItems = [
   "Badge",
   "Button",
   "Card",
+  "Carousel",
   "Footer",
+  "Form",
+  "Hero",
+  "Modal",
   "Navbar",
   "Pagination",
+  "Rating",
   "Spinner",
-  "Carousel",
-  "Modal",
   "Table"
 ];
 
