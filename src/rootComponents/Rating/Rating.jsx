@@ -1,8 +1,9 @@
+import Rating1 from "../../components/App/Rating/Rating1";
 
 const Rating = () => {
     return(
         <div>
-             <p> Welcome to Rating part </p>
+              <Rating1/>
         </div>
     )
 }
