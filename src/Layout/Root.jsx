@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import PageFooter from "../Shared/Footer/PageFooter";
 
 const Root = () => {
   return (
@@ -8,6 +9,8 @@ const Root = () => {
       <div className="lg:px-0 px-5">
         <Outlet />
       </div>
+      <hr className="w-10/12 mx-auto"/>
+      <PageFooter />
     </div>
   );
 };

@@ -59,18 +59,18 @@ const Sidebar = () => {
         </button>
       </div>
       <div
-        className={` components-sidebar  backdrop-blur-xl bg-white fixed top-[50px] z-[20] ${
+        className={` components-sidebar  backdrop-blur-xl bg-transparent fixed top-[50px] z-[20] ${
           isActive && "-translate-x-full"
-        }  xl:translate-x-0 xl:w-[240px]  select-none px-2 block transition-all overflow-y-scroll text-black`}
+        }  xl:translate-x-0 xl:w-[240px]  select-none px-2 block transition-all overflow-y-scroll `}
       >
         <div className="flex h-full w-full flex-col space-y-1">
           {/* docs container */}
-          <div className="flex flex-col px-4 pt-10  text-lg text-black ">
+          <div className="flex flex-col px-4 pt-10  text-lg  ">
             <div onClick={handleDocNavOpen} className="text-2xl">
               <div className="flex justify-between items-center border px-4 py-2 rounded-md ">
                 <div className="flex items-center ">
                   <FaAngleDown
-                    className={`transition-all text-sm mr-3 duration-300 ease-in-out text-[#0072ff]  ${
+                    className={`transition-all text-sm mr-3 duration-300 ease-in-out   ${
                       docOpen ? "rotate-180" : "rotate-0"
                     }`}
                   />
@@ -92,13 +92,13 @@ const Sidebar = () => {
               >
                 <div className="my-2 flex flex-col  overflow-hidden  text-lg space-y-3">
                   <Link
-                    className="px-2 text-gray-900 duration-300 text-sm leading-2 tracking-wide   hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
+                    className="px-2  duration-300 text-sm leading-2 tracking-wide    border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
                     to={"/"}
                   >
                     Introduction
                   </Link>
                   <Link
-                    className="px-2  text-gray-900 duration-300  text-sm leading-2 tracking-wide  hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
+                    className="px-2   duration-300  text-sm leading-2 tracking-wide   border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
                     to="/"
                   >
                     Quick Start
@@ -113,15 +113,15 @@ const Sidebar = () => {
               <div className="flex justify-between items-center border px-4 py-2 rounded-md overflow-hidden">
                 <div className="flex items-center ">
                   <FaAngleDown
-                    className={`transition-all text-sm duration-300 mr-3 ease-in-out text-[#0072ff]  ${
+                    className={`transition-all text-sm duration-300 mr-3 ease-in-out  ${
                       componentOpen ? "rotate-180" : "rotate-0"
                     }`}
                   />
-                  <span className="text-sm leading-2 tracking-wide text-black">
+                  <span className="text-sm leading-2 tracking-wide ">
                     Components
                   </span>
                 </div>
-                <RiSettings4Fill className=" text-sm text-black" />{" "}
+                <RiSettings4Fill className=" text-sm " />{" "}
               </div>
 
               <div
@@ -137,7 +137,7 @@ const Sidebar = () => {
                     <NavLink
                       onClick={handleLink}
                       key={i}
-                      className="px-2 text-gray-900 duration-300  hover:text-black border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
+                      className="px-2 duration-300  border-l-2 border-transparent hover:border-l-2 hover:border-l-[#0072ff]"
                       to={ItemName.toLocaleLowerCase()}
                     >
                       <p onClick={() => setIsActive(true)}>{ItemName}</p>
