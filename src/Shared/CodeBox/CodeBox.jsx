@@ -36,9 +36,9 @@ const CodeBox = ({ children, stringCode, text }) => {
     <>
       <div className={`w-full rounded-md h-fit  px-4 py-2 `}>
         <div className={`w-full rounded-md h-fit  px-4 py-1 my-10 `}>
-          <h2 className="text-black text-xl font-semibold mb-3">{text}</h2>
+          <h2 className=" text-xl font-semibold mb-3">{text}</h2>
 
-          <div className="flex gap-2 items-center sm:justify-between justify-end rounded-t-lg   shadow-lg bg-[#1C372C] py-2">
+          <div className="flex gap-2 items-center sm:justify-between justify-end rounded-t-lg   shadow-lg bg-transparent py-2">
             <div>
 
             </div>
@@ -65,13 +65,13 @@ const CodeBox = ({ children, stringCode, text }) => {
             <div className="flex items-center">
               <div className="flex ">
                 {isCodeBoxOpen ? (
-                  <div className=" text-text1">
+                  <div className=" ">
                     <button
                       onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
-                      className="flex bg-third items-center py-1 px-3 rounded-md transition-all duration-300 hover:bg-forth"
+                      className="flex  items-center py-1 px-3 rounded-md transition-all duration-300 "
                     >
                       <IoMdEye
-                        className="text-xl  text-text1 cursor-pointer"
+                        className="text-xl   cursor-pointer"
                         onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
                       />
                     </button>
@@ -80,7 +80,7 @@ const CodeBox = ({ children, stringCode, text }) => {
                   <div>
                     <button
                       onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
-                      className="flex bg-third items-center py-1 px-2 rounded-md transition-all duration-300 hover:bg-forth"
+                      className="flex  items-center py-1 px-2 rounded-md transition-all duration-300"
                     >
                       <FaCode
                         className="text-xl   cursor-pointer ml-2"
@@ -91,14 +91,14 @@ const CodeBox = ({ children, stringCode, text }) => {
                 )}
               </div>
               <CopyToClipboard text={stringCode} onCopy={handleCopy}>
-                <button className="copy-button px-3 text-text1">
+                <button className="copy-button px-3 ">
                   {isCopied ? (
-                    <div className="flex items-center text-text1 bg-third px-3  py-2 rounded-md hover:bg-forth">
+                    <div className="flex items-center   px-3  py-2 rounded-md">
                       <IoCheckmarkDoneSharp size={15}  />
                     </div>
                   ) : (
-                    <div className="flex items-center text-text1 gap-x-2">
-                      <div className=" bg-third text-text1 py-2 px-3 rounded-md  hover:bg-forth">
+                    <div className="flex items-center  gap-x-2">
+                      <div className="   py-2 px-3 rounded-md  ">
                         <FaCopy  />
                       </div>
                     </div>

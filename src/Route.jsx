@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createBrowserRouter } from "react-router-dom";
 import ComponentsLayout from "./Layout/ComponentsLayout";
 import Root from "./Layout/Root";
@@ -18,14 +19,40 @@ import Table from "./rootComponents/Table/Table";
 import Rating from "./rootComponents/Rating/Rating";
 import Form from "./rootComponents/Form/Form";
 import Hero from "./rootComponents/Hero/Hero";
+import BlogLayout from "./Layout/BlogLayout";
+import UIProducts from "./components/HomeCmp/Product/UIProducts";
+import Core from "./components/HomeCmp/Product/Core";
+import Advance from "./components/HomeCmp/Product/Advance";
+import Templates from "./components/HomeCmp/Product/Templates";
+import DesignKit from "./components/HomeCmp/Product/DesignKit";
 
 const Route = createBrowserRouter([
   { path: "*", element: <Working /> },
   {
     path: "/",
     element: <Root />,
-    children: [{ path: "/", element: <Home /> }],
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+        children: [
+          { path: "core", element: <Core /> },
+          { path: "advance", element: <Advance /> },
+          { path: "template", element: <Templates /> },
+          { path: "kit", element: <DesignKit /> },
+
+
+        ]
+      }],
+
   },
+
+
+
+
+
+
+
   {
     path: "/components",
     element: <ComponentsLayout />,
@@ -38,18 +65,23 @@ const Route = createBrowserRouter([
       { path: "badge", element: <Badge /> },
       { path: "alert", element: <Alert /> },
       { path: "spinner", element: <Spinner /> },
-      { path:"pagination",element:<Pagination/> },
-      {path:"navbar", element:<Nav/>},
-      {path:"carousel", element:<Carousel/>},
-      {path:"footer", element:<Footer/>},
-      {path:"modal", element:<Modal/>},
-      {path:"table", element:<Table/>},
-      {path:"rating", element:<Rating/>},
-      {path:"form", element:<Form/>},
-      {path:"hero", element:<Hero/>},
+      { path: "pagination", element: <Pagination /> },
+      { path: "navbar", element: <Nav /> },
+      { path: "carousel", element: <Carousel /> },
+      { path: "footer", element: <Footer /> },
+      { path: "modal", element: <Modal /> },
+      { path: "table", element: <Table /> },
+      { path: "rating", element: <Rating /> },
+      { path: "form", element: <Form /> },
+      { path: "hero", element: <Hero /> },
 
 
     ],
   },
+  {
+
+    path: "/blog",
+    element: <BlogLayout />
+  }
 ]);
 export default Route;

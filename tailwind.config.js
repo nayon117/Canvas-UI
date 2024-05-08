@@ -17,7 +17,15 @@ module.exports = withMT({
         "third": "#F9B900",
         "forth": "#B78A4F",
         "text1": "black",
-        "text2":"white"
+        "text2":"white",
+
+        'steelBlue': '#51829B',
+        "darkGreen": '#004d40',
+        'paleAqua': "#ADC9C9",
+        'grayishBlue':"#A9A9C7",
+        'bluish-green':"#1C2A28",
+        "darkNavy":"#0C0C17",
+        "yellow-green":"#d9fe54"
       }
     },
   },
